@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whiteboard Reader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <section class="whiteboard" aria-label="Whiteboard display">
+        <header class="board-header">
+          <h1>Whiteboard Notes</h1>
+          <div class="controls">
+            <label for="filePicker">Load a .txt file</label>
+            <input id="filePicker" type="file" accept=".txt,text/plain" />
+          </div>
+        </header>
+        <pre id="boardText" class="board-text">Loading sample text...</pre>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

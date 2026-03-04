@@ -1,0 +1,11 @@
+Project Brainstorm
+==================
+
+- Build a realistic whiteboard UI.
+- Read text from a .txt file.
+- Support loading custom notes from the local machine.
+
+Next Steps:
+1. Add color marker modes.
+2. Add save/export options.
+3. Add sticky notes.
