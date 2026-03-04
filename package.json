@@ -5,6 +5,7 @@
   "description": "Realistic whiteboard text viewer",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "preview": "node server.js"
   }
 }

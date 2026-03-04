@@ -3,7 +3,7 @@
   --frame-dark: #613e16;
   --wall: #d8d2c6;
   --board: #f4f4ef;
-  --marker: #202020;
+  --marker: #1f5fbf;
   --shadow: rgba(0, 0, 0, 0.28);
 }
 
@@ -84,7 +84,7 @@ body {
   overflow: auto;
   white-space: pre-wrap;
   line-height: 1.6;
-  font-family: "Comic Sans MS", "Bradley Hand", "Chalkboard", cursive;
+  font-family: "Rock Salt", "Comic Sans MS", "Bradley Hand", "Chalkboard", cursive;
   font-size: clamp(1.1rem, 0.9vw + 0.8rem, 1.45rem);
   color: var(--marker);
   text-shadow: 0.3px 0.3px 0 rgba(0, 0, 0, 0.35);

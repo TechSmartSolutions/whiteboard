@@ -52,6 +52,32 @@ Use this only when you specifically want `server.js` on-host:
 
 Most shared cPanel plans are easier with **Option A**.
 
+
+## Updating after a GitHub change
+
+If your last GitHub update looked wrong, use one of these reliable update flows:
+
+### cPanel File Manager flow (most common)
+
+1. On GitHub, open your repo and download the latest source as a ZIP (**Code → Download ZIP**).
+2. In cPanel, go to **File Manager** and open your app folder (`public_html` or subfolder).
+3. Delete old app files (`index.html`, `styles.css`, `script.js`, `sample.txt`, `.htaccess`) or overwrite them.
+4. Upload the new ZIP, extract it, and move the updated files into the web root.
+5. Hard refresh the browser (`Ctrl+F5` / `Cmd+Shift+R`).
+
+### cPanel Git Version Control flow (if enabled on your host)
+
+1. Open **Git Version Control** in cPanel.
+2. Pull latest changes from your GitHub branch into the deployed repo.
+3. If using Node app mode, restart the Node app from cPanel after pulling.
+
+### Quick checklist when updates do not appear
+
+- Confirm files were uploaded to the correct folder (`public_html` vs subfolder).
+- Confirm `index.html` timestamp changed in cPanel.
+- Clear browser cache and any CDN cache.
+- Ensure `.htaccess` is still present for route fallback.
+
 ## What to expect
 
 - The app loads `sample.txt` by default.
